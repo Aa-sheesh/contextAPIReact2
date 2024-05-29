@@ -1,14 +1,14 @@
 # State variables:
-onst [todos, setTodos] = useState([])
+const [todos, setTodos] = useState([])
 # ...prev
-#const addTodo = (todo) => {
+const addTodo = (todo) => {
     setTodos((prev)=>[{id:Date.now(),...todo},...prev])
   }.
 In this code, the array of todos is updated by passing of #prev todos and it is updated such that the newest todo is passed id of current date timestamp and other things of to do are passed to that object element of array.
 Then, the newest one is kept on the top of the array and everyone else comes after that. 
 
 # prev.map(())
-#const updateTodo =(id,todo)=>{
+const updateTodo =(id,todo)=>{
     setTodos((prev)=>prev.map((prevTodo)=>prevTodo.id === id ? todo : prevTodo)
   )}
 This function takes id and todo and then updates in such where prev.map(prevTodo) checks each object element of the array where prev.Todo===id and if it is true then it updated to current todo passed else goes back to prevTodo

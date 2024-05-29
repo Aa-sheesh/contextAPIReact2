@@ -3,6 +3,9 @@
 2. Provide the context
 3. Consume the context in Child components
 
+# Diagram for how it works
+![diagram](context-PiyushGarg/context%20working.png)
+
 # Fastest boiler plate to initialize context API:
 import { createContext, useContext } from "react";
 

@@ -23,17 +23,24 @@ export const TodoContext = createContext({
 });
 -functions not defined, will be defined in specific components
 ♦(TodoContext.js)export a function to use these contexts like this-
+
 export const useTodo = () =>{
     return useContext(TodoContext)
 }
+
 ♦(TodoContext.js)The wrapper that stores all these values/ library that stores all these values is-
+
 export const TodoProvider=TodoContext.Provider;
+
 ♦(index.js)Export these contexts like-
+
 export {TodoContext,TodoProvider,useTodo} from './TodoContext';
+
 ♦(app.jsx)Fetch the values like this-
-<TodoProvider value={{todos,addTodo,updateTodo,deleteTodo,toggleComplete}}>
+
+<!--<TodoProvider value={{todos,addTodo,updateTodo,deleteTodo,toggleComplete}}>
       <h1>Hello World!</h1>
-    </TodoProvider>
+    </TodoProvider> -->
 
 
 # Fastest boiler plate to initialize context API:

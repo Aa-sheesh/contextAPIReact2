@@ -8,6 +8,7 @@
 
 # contexts working
 ♦(TodoContext.js)Create context like this-
+
 export const TodoContext = createContext({
     todos: [
         { 
@@ -21,7 +22,9 @@ export const TodoContext = createContext({
         toggleComplete: (id) => {}
     ,
 });
+
 -functions not defined, will be defined in specific components
+
 ♦(TodoContext.js)export a function to use these contexts like this-
 
 export const useTodo = () =>{

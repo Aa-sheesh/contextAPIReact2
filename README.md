@@ -12,7 +12,8 @@
 
 - (TodoContext.js)Create context like this-
 
-```export const TodoContext = createContext({
+```js
+export const TodoContext = createContext({
     todos: [
         {
             id: 1,
@@ -24,11 +25,8 @@
         deleteTodo: (id) => {},
         toggleComplete: (id) => {}
     ,
-<<<<<<< HEAD
-}); ```
-=======
-});```
->>>>>>> 136b8aa8c267c31ab42803c527dbb2fc53a8a8ba
+});
+```
 
 - functions not defined, will be defined in specific components
 

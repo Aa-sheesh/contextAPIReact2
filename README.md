@@ -32,26 +32,30 @@ export const TodoContext = createContext({
 
 - (TodoContext.js)export a function to use these contexts like this-
 
-``` export const useTodo = () =>{
+```js
+ export const useTodo = () =>{
     return useContext(TodoContext)
-}```
+}
+```
 
 - (TodoContext.js)The wrapper that stores all these values/ library that stores all these values is-
-
+```js
 export const TodoProvider=TodoContext.Provider;
-
+```
 - (index.js)Export these contexts like-
-
+```js
 export {TodoContext,TodoProvider,useTodo} from './TodoContext';
-
+```
 - (app.jsx)Fetch the values like this-
 
-```  <TodoProvider value={{todos,addTodo,updateTodo,deleteTodo,toggleComplete}}>
+```jsx
+  <TodoProvider value={{todos,addTodo,updateTodo,deleteTodo,toggleComplete}}>
         <h1>Hello World!</h1>
-      </TodoProvider>```
-
+      </TodoProvider>
+```
 
 # Fastest boiler plate to initialize context API:
+```jsx
 import { createContext, useContext } from "react";
 
 export const ThemeContext = createContext({
@@ -65,15 +69,17 @@ export const ThemeProvider = ThemeContext.Provider
 export default function useTheme(){
     return useContext(ThemeContext)
 }
-
+```
 # Step that shows each step:
-# UserContext.js
+## UserContext.js
+```jsx
 import React from "react";
 const UserContext=React.createContext();
 export default UserContext;
-# UserContextProvider.jsx
+```
+## UserContextProvider.jsx
+```jsx
 import React, { useState } from "react";
-
 import UserContext from "./UserContext";
 
 const UserContextProvider = ({ children }) => {
@@ -84,6 +90,5 @@ const UserContextProvider = ({ children }) => {
     </UserContext.Provider>
   );
 };
-
 export default UserContextProvider;
 ````

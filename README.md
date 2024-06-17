@@ -6,7 +6,7 @@
 
 ## Diagram for how it works
 
-![diagram](diagram.png)
+<p align="center"><img src="./diagram.png"/></p>
 
 ## contexts working
 
